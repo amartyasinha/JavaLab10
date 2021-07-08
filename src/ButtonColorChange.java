@@ -5,6 +5,7 @@ public class ButtonColorChange extends Frame implements ActionListener {
     Button redButton, blueButton;
 
     ButtonColorChange() {
+        super("Button Color Change");
         redButton = new Button("RED");
         redButton.setBounds(120, 120, 150, 20);
         redButton.setBackground(Color.RED);
