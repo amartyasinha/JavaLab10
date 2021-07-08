@@ -9,19 +9,13 @@ public class KPressed {
         frame = new Frame("Check which key is pressed");
         lbl = new Label("Press any Key");
 
-        lbl.setBounds(120, 150, 200, 30);
+        lbl.setBounds(120, 150, 200, 20);
         lbl.setAlignment(Label.CENTER);
 
         frame.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
-                lbl.setText("You have typed " + e.getKeyChar());
-            }
-            public void keyPressed(KeyEvent e) {
-                lbl.setText("You have pressed " + e.getKeyChar());
-            }
-            public void keyReleased(KeyEvent e) {
-                lbl.setText("You have released " + e.getKeyChar());
+                lbl.setText("Typed Character is " + e.getKeyChar());
             }
         });
         frame.add(lbl);
